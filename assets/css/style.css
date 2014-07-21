@@ -1,0 +1,45 @@
+@keyframes walk {
+from {background-position-x:  0; }
+to {background-position-x:  -384px;}
+}
+@-webkit-keyframes walk {
+from  {background-position-x: 0; }
+to {background-position-x:  -384px;}
+
+}
+
+.world {
+	position: relative;
+	width: 500px;
+	height: 300px;
+	margin: auto;
+	border: 1px solid #666;
+}
+
+#character {
+	width: 48px;
+	height: 48px;
+	background-image: url('../images/character_sprite.png');
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#character.move {
+	animation:walk .5s steps(8) infinite ;
+	-webkit-animation:walk .5s steps(8) infinite ;
+}
+
+#character.right {
+		background-position-y:0;
+}
+
+#character.left {
+		background-position-y:-336px;
+}
+
+#character.up {
+		background-position-y:-48px;
+}
+#character.down {
+		background-position-y:-192px;
+}
