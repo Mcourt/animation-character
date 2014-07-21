@@ -1,12 +1,4 @@
-@keyframes walk {
-from {background-position-x:  0; }
-to {background-position-x:  -384px;}
-}
-@-webkit-keyframes walk {
-from  {background-position-x: 0; }
-to {background-position-x:  -384px;}
-
-}
+@import 'animations.css';
 
 .world {
 	position: relative;
